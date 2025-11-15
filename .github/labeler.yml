@@ -1,0 +1,49 @@
+# .github/labeler.yml
+
+feat:
+  - 'feat/*'
+  - 'FEAT*'
+  - '[Ff][Ee][Aa][Tt]*'
+  - 'feat/**'
+
+refactor:
+  - 'refactor/*'
+  - 'REFACTOR*'
+  - '[Rr][Ee][Ff][Aa][Cc][Tt]*'
+  - 'refactor/**'
+
+perfor:
+  - 'perfor/*'
+  - 'PERFOR*'
+  - '[Pp][Ee][Rr][Ff][Oo][Rr]*'
+  - 'perfor/**'
+
+bug:
+  - 'bug/*'
+  - 'BUG*'
+  - '[Bb][Uu][Gg]*'
+  - 'hotfix/*'
+
+docs:
+  - 'docs/*'
+  - 'DOCS*'
+  - '[Dd][Oo][Cc][Ss]*'
+  - '**/*.md'
+
+cicd:
+  - 'cicd/*'
+  - 'CICD*'
+  - '[Cc][Ii][Cc][Dd]*'
+
+test:
+  - 'test/*'
+  - 'TEST*'
+  - '[Tt][Ee][Ss][Tt]*'
+  - '**/*Test.java'
+
+chore:
+  - 'chore/*'
+  - 'CHORE*'
+  - '[Cc][Hh][Oo][Rr][Ee]*'
+  - '**/*.yml'
+  - '**/*.yaml'
