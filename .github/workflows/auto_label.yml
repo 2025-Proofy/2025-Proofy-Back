@@ -12,11 +12,22 @@ permissions:
   issues: write
 
 jobs:
-  label:
+  pr-label:
+    if: github.event_name == 'pull_request'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Apply labels from labeler.yml
+      - name: Apply labels from .github/labeler.yml
         uses: actions/labeler@v5
+
+  issue-label:
+    if: github.event_name == 'issues'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Apply labels to issues
+        uses: redhat-plumbers-in-action/issue-labeler@v3
+        with:
+          configuration-path: .github/issue-labeler.yml
+          enable-versioned-regex: true

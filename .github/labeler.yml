@@ -1,49 +1,35 @@
-# .github/labeler.yml
-
 feat:
-  - 'feat/*'
-  - 'FEAT*'
-  - '[Ff][Ee][Aa][Tt]*'
-  - 'feat/**'
+  - title: '(?i)\[feat\]'
+  - base-branch: '(?i)^feat'
 
 refactor:
-  - 'refactor/*'
-  - 'REFACTOR*'
-  - '[Rr][Ee][Ff][Aa][Cc][Tt]*'
-  - 'refactor/**'
+  - title: '(?i)\[refact\]'
+  - base-branch: '(?i)^refactor'
 
 perfor:
-  - 'perfor/*'
-  - 'PERFOR*'
-  - '[Pp][Ee][Rr][Ff][Oo][Rr]*'
-  - 'perfor/**'
+  - title: '(?i)\[perfor\]'
+  - base-branch: '(?i)^perfor'
 
 bug:
-  - 'bug/*'
-  - 'BUG*'
-  - '[Bb][Uu][Gg]*'
-  - 'hotfix/*'
+  - title: '(?i)\[bug\]'
+  - base-branch: '(?i)^(bug|hotfix)'
 
 docs:
-  - 'docs/*'
-  - 'DOCS*'
-  - '[Dd][Oo][Cc][Ss]*'
+  - title: '(?i)\[docs\]'
+  - base-branch: '(?i)^docs'
   - '**/*.md'
 
 cicd:
-  - 'cicd/*'
-  - 'CICD*'
-  - '[Cc][Ii][Cc][Dd]*'
+  - title: '(?i)\[cicd\]'
+  - base-branch: '(?i)^cicd'
 
 test:
-  - 'test/*'
-  - 'TEST*'
-  - '[Tt][Ee][Ss][Tt]*'
+  - title: '(?i)\[test\]'
+  - base-branch: '(?i)^test'
   - '**/*Test.java'
 
 chore:
-  - 'chore/*'
-  - 'CHORE*'
-  - '[Cc][Hh][Oo][Rr][Ee]*'
+  - title: '(?i)\[chore\]'
+  - base-branch: '(?i)^chore'
   - '**/*.yml'
   - '**/*.yaml'
