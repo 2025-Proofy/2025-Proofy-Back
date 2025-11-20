@@ -1,0 +1,104 @@
+{
+  "premises": [
+    "(A ∧ ¬B) ∨ (C ∨ D)",
+    "¬C ∧ B"
+  ],
+  "conclusion": "¬¬D",
+  "lines": [
+    {
+      "number": 1,
+      "depth": 0,
+      "sentence": "(A ∧ ¬B) ∨ (C ∨ D)",
+      "citation": "PR"
+    },
+    {
+      "number": 2,
+      "depth": 0,
+      "sentence": "¬C ∧ B",
+      "citation": "PR"
+    },
+
+    { "number": 3, "depth": 0, "sentence": "¬C", "citation": "∧E 2" },
+    { "number": 4, "depth": 0, "sentence": "B", "citation": "∧E 2" },
+
+    {
+      "number": 5,
+      "depth": 1,
+      "sentence": "¬D",
+      "citation": "PR"
+    },
+
+    {
+      "number": 6,
+      "depth": 2,
+      "sentence": "A ∧ ¬B",
+      "citation": "PR"
+    },
+    {
+      "number": 7,
+      "depth": 2,
+      "sentence": "¬B",
+      "citation": "∧E 6"
+    },
+    {
+      "number": 8,
+      "depth": 2,
+      "sentence": "⊥",
+      "citation": "⊥I 4 7"
+    },
+
+    {
+      "number": 9,
+      "depth": 2,
+      "sentence": "C ∨ D",
+      "citation": "PR"
+    },
+
+    {
+      "number": 10,
+      "depth": 3,
+      "sentence": "C",
+      "citation": "PR"
+    },
+    {
+      "number": 11,
+      "depth": 3,
+      "sentence": "⊥",
+      "citation": "⊥I 3 10"
+    },
+
+    {
+      "number": 12,
+      "depth": 3,
+      "sentence": "D",
+      "citation": "PR"
+    },
+    {
+      "number": 13,
+      "depth": 3,
+      "sentence": "⊥",
+      "citation": "⊥I 5 12"
+    },
+
+    {
+      "number": 14,
+      "depth": 2,
+      "sentence": "⊥",
+      "citation": "∨E 9 10-11 12-13"
+    },
+
+    {
+      "number": 15,
+      "depth": 1,
+      "sentence": "⊥",
+      "citation": "∨E 1 6-8 9-14"
+    },
+
+    {
+      "number": 16,
+      "depth": 0,
+      "sentence": "¬¬D",
+      "citation": "¬I 5-15"
+    }
+  ]
+}

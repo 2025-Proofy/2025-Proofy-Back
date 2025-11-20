@@ -1,0 +1,80 @@
+{
+  "premises": [
+    "(A ∨ B) ∨ C"
+  ],
+  "conclusion": "A ∨ (B ∨ C)",
+  "lines": [
+    {
+      "number": 1,
+      "depth": 0,
+      "sentence": "(A ∨ B) ∨ C",
+      "citation": "PR"
+    },
+    {
+      "number": 2,
+      "depth": 1,
+      "sentence": "A ∨ B",
+      "citation": "PR"
+    },
+    {
+      "number": 3,
+      "depth": 2,
+      "sentence": "A",
+      "citation": "PR"
+    },
+    {
+      "number": 4,
+      "depth": 2,
+      "sentence": "A ∨ (B ∨ C)",
+      "citation": "∨I 3"
+    },
+    {
+      "number": 5,
+      "depth": 2,
+      "sentence": "B",
+      "citation": "PR"
+    },
+    {
+      "number": 6,
+      "depth": 2,
+      "sentence": "B ∨ C",
+      "citation": "∨I 5"
+    },
+    {
+      "number": 7,
+      "depth": 2,
+      "sentence": "A ∨ (B ∨ C)",
+      "citation": "∨I 6"
+    },
+    {
+      "number": 8,
+      "depth": 1,
+      "sentence": "A ∨ (B ∨ C)",
+      "citation": "∨E 2 3-4 5-7"
+    },
+    {
+      "number": 9,
+      "depth": 1,
+      "sentence": "C",
+      "citation": "PR"
+    },
+    {
+      "number": 10,
+      "depth": 1,
+      "sentence": "B ∨ C",
+      "citation": "∨I 9"
+    },
+    {
+      "number": 11,
+      "depth": 1,
+      "sentence": "A ∨ (B ∨ C)",
+      "citation": "∨I 10"
+    },
+    {
+      "number": 12,
+      "depth": 0,
+      "sentence": "A ∨ (B ∨ C)",
+      "citation": "∨E 1 2-8 9-11"
+    }
+  ]
+}

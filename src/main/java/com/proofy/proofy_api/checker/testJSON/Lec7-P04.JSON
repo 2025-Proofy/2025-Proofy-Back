@@ -1,0 +1,32 @@
+{
+  "premises": [
+    "A"
+  ],
+  "conclusion": "A",
+  "lines": [
+    {
+      "number": 1,
+      "depth": 0,
+      "sentence": "A",
+      "citation": "PR"
+    },
+    {
+      "number": 2,
+      "depth": 1,
+      "sentence": "¬A",
+      "citation": "PR"
+    },
+    {
+      "number": 3,
+      "depth": 1,
+      "sentence": "⊥",
+      "citation": "⊥I 1 2"
+    },
+    {
+      "number": 4,
+      "depth": 0,
+      "sentence": "A",
+      "citation": "¬I 2-3"
+    }
+  ]
+}

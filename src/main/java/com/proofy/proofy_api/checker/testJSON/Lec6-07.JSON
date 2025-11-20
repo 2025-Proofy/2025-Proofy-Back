@@ -1,0 +1,50 @@
+{
+  "premises": [
+    "(A ∧ B) ∨ C"
+  ],
+  "conclusion": "C ∨ B",
+  "lines": [
+    {
+      "number": 1,
+      "depth": 0,
+      "sentence": "(A ∧ B) ∨ C",
+      "citation": "PR"
+    },
+    {
+      "number": 2,
+      "depth": 1,
+      "sentence": "A ∧ B",
+      "citation": "PR"
+    },
+    {
+      "number": 3,
+      "depth": 1,
+      "sentence": "B",
+      "citation": "∧E 2"
+    },
+    {
+      "number": 4,
+      "depth": 1,
+      "sentence": "C ∨ B",
+      "citation": "∨I 3"
+    },
+    {
+      "number": 5,
+      "depth": 1,
+      "sentence": "C",
+      "citation": "PR"
+    },
+    {
+      "number": 6,
+      "depth": 1,
+      "sentence": "C ∨ B",
+      "citation": "∨I 5"
+    },
+    {
+      "number": 7,
+      "depth": 0,
+      "sentence": "C ∨ B",
+      "citation": "∨E 1 2-4 5-6"
+    }
+  ]
+}

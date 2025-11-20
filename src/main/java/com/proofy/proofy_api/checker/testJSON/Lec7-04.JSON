@@ -1,0 +1,68 @@
+{
+  "premises": [
+    "¬(A ∨ B)"
+  ],
+  "conclusion": "¬A ∧ ¬B",
+  "lines": [
+    {
+      "number": 1,
+      "depth": 0,
+      "sentence": "¬(A ∨ B)",
+      "citation": "PR"
+    },
+    {
+      "number": 2,
+      "depth": 1,
+      "sentence": "A",
+      "citation": "PR"
+    },
+    {
+      "number": 3,
+      "depth": 1,
+      "sentence": "A ∨ B",
+      "citation": "∨I 2"
+    },
+    {
+      "number": 4,
+      "depth": 1,
+      "sentence": "⊥",
+      "citation": "⊥I 1 3"
+    },
+    {
+      "number": 5,
+      "depth": 0,
+      "sentence": "¬A",
+      "citation": "¬I 2-4"
+    },
+    {
+      "number": 6,
+      "depth": 1,
+      "sentence": "B",
+      "citation": "PR"
+    },
+    {
+      "number": 7,
+      "depth": 1,
+      "sentence": "A ∨ B",
+      "citation": "∨I 6"
+    },
+    {
+      "number": 8,
+      "depth": 1,
+      "sentence": "⊥",
+      "citation": "⊥I 1 7"
+    },
+    {
+      "number": 9,
+      "depth": 0,
+      "sentence": "¬B",
+      "citation": "¬I 6-8"
+    },
+    {
+      "number": 10,
+      "depth": 0,
+      "sentence": "¬A ∧ ¬B",
+      "citation": "∧I 5 9"
+    }
+  ]
+}
