@@ -1,35 +1,41 @@
 feat:
   - title: '(?i)\[feat\]'
-  - base-branch: '(?i)^feat'
+  - branch: '(?i)^feat'
+  - files: 'feat/**'
 
 refactor:
   - title: '(?i)\[refact\]'
-  - base-branch: '(?i)^refactor'
+  - branch: '(?i)^refactor'
+  - files: 'refactor/**'
 
 perfor:
   - title: '(?i)\[perfor\]'
-  - base-branch: '(?i)^perfor'
+  - branch: '(?i)^perfor'
+  - files: 'perfor/**'
 
 bug:
   - title: '(?i)\[bug\]'
-  - base-branch: '(?i)^(bug|hotfix)'
+  - branch: '(?i)^(bug|hotfix)'
+  - files: 'bug/**'
 
 docs:
   - title: '(?i)\[docs\]'
-  - base-branch: '(?i)^docs'
-  - '**/*.md'
+  - branch: '(?i)^docs'
+  - files: '**/*.md'
 
 cicd:
   - title: '(?i)\[cicd\]'
-  - base-branch: '(?i)^cicd'
+  - branch: '(?i)^cicd'
+  - files: 'cicd/**'
 
 test:
   - title: '(?i)\[test\]'
-  - base-branch: '(?i)^test'
-  - '**/*Test.java'
+  - branch: '(?i)^test'
+  - files: '**/*Test.java'
 
 chore:
   - title: '(?i)\[chore\]'
-  - base-branch: '(?i)^chore'
-  - '**/*.yml'
-  - '**/*.yaml'
+  - branch: '(?i)^chore'
+  - files: |
+      **/*.yml
+      **/*.yaml
